@@ -82,6 +82,78 @@ The requirements.txt can then be committed to version control and shipped as par
 
 
 
+## How to manage also non-python libraries with Conda
+From: https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html
+
+Update conda to the current version. Type the following:
+```
+conda update conda
+```
+
+Conda allows you to create separate environments containing files, packages, and their dependencies that will not interact with other environments.
+If you want to proceed with conda environments follow these steps:
+
+1. Create a new environment and install a package in it.
+
+We will name the environment snowflakes and install the package BioPython. At the Anaconda Prompt or in your terminal window, type the following:
+```
+conda create --name snowflakes biopython
+```
+
+Conda checks to see what additional packages ("dependencies") BioPython will need, and asks if you want to proceed:
+```
+Proceed ([y]/n)? y
+```
+Type "y" and press Enter to proceed.
+
+2. To use, or "activate" the new environment, type the following:
+```
+    Windows: conda activate snowflakes
+
+    macOS and Linux: conda activate snowflakes
+```
+
+3. To see a list of all your environments, type:
+```
+conda info --envs
+```
+A list of environments appears, similar to the following:
+```
+conda environments:
+
+    base           /home/username/Anaconda3
+    snowflakes   * /home/username/Anaconda3/envs/snowflakes
+```
+
+4. Change your current environment back to the default (base): 
+```
+conda activate
+```
+
+### Managing packages with conda
+Install 
+Check to see if a package you have not installed named "beautifulsoup4" is available from the Anaconda repository:
+```
+conda search beautifulsoup4
+```
+
+Conda displays a list of all packages with that name on the Anaconda repository, so we know it is available.
+
+Install this package into the current environment:
+```
+conda install beautifulsoup4
+```
+Check to see if the newly installed program is in this environment:
+```
+conda list
+```
+
+
+
+
+
+
+
 ## How to create a kernel to use within the notebook
 
 From 
