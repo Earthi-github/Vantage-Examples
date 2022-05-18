@@ -6,6 +6,7 @@ A set of Jupyter Notebook examples showing the usage of the [Vantage Platform's 
 * [Trigger a Job via the Process API](./Job.ipynb)
 * [Concatenate different jobs in a Workflow](./Workflow.ipynb)
 * [Systematic Processing](./SystematicProcessing.ipynb)
+* [Food Security TEP](./FoodSecurity.ipynb)
 
 In addition there is an example to use the Euro Data Cube (EDC) from Vantage:
 
